@@ -793,6 +793,14 @@ footer a:hover{
     .first-page{
         height: 1400px;
     }
+
+    .fadeInLeft{
+        animation: none;
+    }
+
+    .fadeInRight{
+        animation: none;
+    }
     
     .companies-list{
         flex-wrap: wrap;
