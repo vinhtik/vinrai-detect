@@ -1135,14 +1135,6 @@ footer a:hover{
     .fadeInRight{
         animation: none;
     }
-
-    .rotate{
-        animation: none;
-    }
-
-    .fading{
-        animation: none;
-    }
     
     .companies-list{
         flex-wrap: wrap;
