@@ -1207,6 +1207,14 @@ footer a:hover{
     .advantage-section .grid-box .grid-card{
         height: 800px;
     }
+
+    .advantage-section .grid-box .grid-card .info{
+        align-items: baseline;
+    }
+
+    .advantage-section .grid-box .grid-card .info p{
+        width: 100%;
+    }
     
     .advantage-section .grid-box .grid-card .info h2{
         font-size: 40px;
@@ -1214,6 +1222,10 @@ footer a:hover{
     
     .advantage-section .grid-box .grid-card .info h4{
         font-size: 20px;
+    }
+
+    .advantage-section .grid-box .grid-card .info{
+        padding: 0.8rem;
     }
     
     .grid1-robot-img, .grid3-robot-img{
@@ -1233,6 +1245,12 @@ footer a:hover{
         font-size: 17px;
     }
 
+    .pricing-section .pricing-container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
     .pricing-section .pricing-img-box img:nth-child(2){
         height: 150px;
         margin-top: 50px;
@@ -1243,7 +1261,23 @@ footer a:hover{
     }
     
     .pricing-section .price-box{
-        margin-left: 2%;
+        margin: 0;
+        width: fit-content;
+        background-color: rgba(107, 88, 116, 0.023);
+    }
+
+     .pricing-section .price-box h1{
+        font-size: 2rem;
+    }
+
+    .faq-item{
+        border: rgba(107, 88, 116, 0.5) solid 0.8px;
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
     
     footer{
