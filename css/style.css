@@ -588,7 +588,7 @@ header a:hover{
 .pricing-section{
     position: relative;
     width: 95%;
-    height: 2000px;
+    height: 1500px;
     border: 0.5px solid rgba(107, 88, 116, 0.5);
     border-top: none;
     border-bottom: none;
@@ -636,16 +636,6 @@ header a:hover{
     justify-content: center;
 }
 
-.pricing-section .pricing-img-box img{
-    position: absolute;
-    top: 20%;
-}
-
-.pricing-section .pricing-img-box img:nth-child(2){
-    height: 350px;
-    margin-top: 5%;
-}
-
 .pricing-section .title{
     font-size: 60px;
     color: white;
@@ -655,10 +645,10 @@ header a:hover{
 .pricing-section .price-box{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
-    width: 30%;
-    height: 900px;
+    width: 50%;
+    height: 700px;
     border: 0.5px solid rgba(107, 88, 116, 0.5);    
     padding: 30px;
     border-radius: 50px;
@@ -667,7 +657,7 @@ header a:hover{
 
 .pricing-section .pricing-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 95%;
     column-gap: 20px;
 }
@@ -730,6 +720,46 @@ header a:hover{
     color: white;
     font-size: 25px;
     margin-top: 70px;
+}
+
+/* FAQ-SECTION */
+.faq-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    border: 0.5px solid rgba(107, 88, 116, 0.5);
+    border-top: none;
+    border-bottom: none;
+    padding-top: 10%;
+    padding-bottom: 20%;
+}   
+
+.faq-section h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 90%;
+}
+
+.faq-item{
+    border: rgba(107, 88, 116, 0.5) solid 0.8px;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    padding: 1rem;
+}
+
+.faq-item p{
+    font-size: 1rem;
+    color:rgb(127, 109, 135)
 }
 
 /* FOOTER  */
@@ -1069,7 +1099,7 @@ footer a:hover{
     }
 
     .pricing-section{
-        height: 4000px;
+        height: 2000px;
     }
 
     footer h1{
