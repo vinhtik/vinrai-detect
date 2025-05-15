@@ -1291,6 +1291,10 @@ footer a:hover{
         color: gray;
         margin-top: 10%;
     }
+
+    .footer-text{
+        width: 90%;
+    }
     
     footer .box-icons a{
         font-size: 20px;
@@ -1315,3 +1319,86 @@ footer a:hover{
     }
 }
 
+@media screen and (min-width: 2559px){
+    .first-page .button-box{
+        width: 20%;
+        height: 6rem;
+        margin-left: 25px;
+        border-radius: 2rem;
+    }
+
+    .app-section{
+        justify-content: space-between;
+        width: 95%;
+        height: 100%;
+        border: 0.5px solid rgb(107, 88, 116, 0.5);
+        border-bottom: none;
+        padding-bottom: 10%;
+    }
+
+    .app-section .left-container{
+        max-width: 95%;
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .app-section .left-container h1{
+        font-size: 5rem;
+        max-width: fit-content;
+        margin-top: 0;
+    }
+
+    .app-section .left-container p{
+        display: flex;
+        align-items: center;
+        font-size: 2.5rem;
+    }
+
+    .app-section .left-container p img{
+        height: 3rem;
+        margin-right: 20px;
+    }
+
+    .app-section .left-container h2{
+        max-width: 700px;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        margin: 0;
+    }
+
+    .app-section .left-container .button-box{
+        margin: 0;
+        margin-top: 40px;
+        width: 100%;
+        border-radius: 2rem;
+        height: 10rem;
+    }
+
+    .app-section .right-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    .app-section .right-container img{
+        width: 100%;
+    }
+
+    .app-section .right-container h2{
+        max-width: 90%;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .button-box button{
+        font-size: 2.5rem;
+        text-wrap-mode: nowrap;
+        border-radius: 2rem;
+    }
+
+}
+    
