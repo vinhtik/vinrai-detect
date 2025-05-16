@@ -831,7 +831,7 @@ footer a:hover{
 /* AUTO DISPLAY ANIMATION */
 .autoDisplay{
     animation: autoDisplayAnimation;
-    animation-timeline: view();
+    animation-timeline: view(100% 0%);
 }
 
 @keyframes autoDisplayAnimation{
@@ -1320,11 +1320,95 @@ footer a:hover{
 }
 
 @media screen and (min-width: 2559px){
+    .head-left img{
+        height: 4rem;
+    }
+
+    .head-left h1{
+        font-size: 3rem;
+    }
+
+    header a{
+        font-size: 2rem;
+    }
+
     .first-page .button-box{
         width: 20%;
         height: 6rem;
         margin-left: 25px;
         border-radius: 2rem;
+    }
+
+    .first-page h1{
+    font-size: 4rem;
+    max-width: 60%;
+    }
+
+    .first-page h3{
+        font-size: 2rem;
+        max-width: 35%;
+        line-height: 2rem;
+    }
+
+    .first-page-image-box{
+        margin-top: 30rem;
+        width: auto;
+        height: 50%;
+    }
+
+    .first-page h4{
+        font-size: 2rem;
+    }
+
+    .companies-list{
+        bottom: 0%;
+        width: 90%;
+    }
+
+    .companies-list .company img{
+        height: 5rem;
+        margin-right: 1rem;
+    }
+
+    .companies-list .company p{
+        font-size: 3rem;
+    }
+
+    .explore-more img{
+        width: 5rem;
+    }
+
+    .features-section h1{
+        font-size: 5rem;
+        max-width: 60%;
+        text-align: center;
+        color: white;
+        margin: 10rem 0;
+    }
+
+    .features-card-box{
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .features-card{
+        width: 40%;
+        height: 35rem;
+    }
+
+    .features-card h2{
+        font-size: 3rem;
+    }
+
+    .features-card p{
+        margin: 5%;
+        max-width: 50%;
+        font-size: 1.6rem;
+        line-height: 1.5rem;
+    }
+
+    .features-card .explore-more a{
+        font-size: 2rem;
     }
 
     .app-section{
