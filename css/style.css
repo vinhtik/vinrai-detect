@@ -1567,7 +1567,12 @@ footer a:hover{
 
     .advantage-section .grid2 .info{
         left: 5%;
-        margin-top: -20%;
+        margin-top: -10%;
+    }
+
+    .advantage-section .grid3 .info{
+        left: 5%;
+        margin-top: -10%;
     }
 
     .advantage-section .grid-box .grid2 h1{
