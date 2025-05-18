@@ -1193,7 +1193,18 @@ footer a:hover{
     }
 
     .app-section .left-container{
+        margin: 0;
+        margin: 5%;
         max-width: 95%;
+    }
+
+    .app-section .right-container{
+        margin: 0;
+        margin: 5%;
+    }
+
+    .app-section .right-container h2{
+        margin: 0;
     }
     
     .app-section .left-container h1{
