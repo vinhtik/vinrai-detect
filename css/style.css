@@ -1222,13 +1222,20 @@ footer a:hover{
         font-size: 18px;
         max-width: 380px;
     }
+
+    .advantage-section .grid-box{
+        width: 100%;
+        gap: 0;
+    }
     
     .advantage-section .grid-box .grid-card{
         height: 800px;
+        border-radius: 0;
     }
 
     .advantage-section .grid-box .grid-card .info{
         align-items: baseline;
+        border-radius: 0;
     }
 
     .advantage-section .grid-box .grid-card .info p{
@@ -1262,6 +1269,11 @@ footer a:hover{
     
     .advantage-section .grid-box .grid3 .info h4{
         font-size: 17px;
+    }
+
+    .advantage-section .grid-box .grid3 .info{
+        margin-left: 0;
+        margin-top: -80%;
     }
 
     .pricing-section .pricing-container{
