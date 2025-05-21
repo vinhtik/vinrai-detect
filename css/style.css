@@ -100,8 +100,12 @@ header a:hover{
     }
 }
 
-.button-box button{
+.button-box a{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     inset: 3px 3px 3px 3px;
     border: none;
     background-color: rgb(14 12 21);
@@ -607,7 +611,7 @@ header a:hover{
 .pricing-section{
     position: relative;
     width: 95%;
-    height: 1500px;
+    height: fit-content;
     border: 0.5px solid rgba(107, 88, 116, 0.5);
     border-top: none;
     border-bottom: none;
@@ -671,7 +675,7 @@ header a:hover{
     border: 0.5px solid rgba(107, 88, 116, 0.5);    
     padding: 30px;
     border-radius: 50px;
-    margin-top: 50px;
+    margin-top: 0;
 }
 
 .pricing-section .pricing-container{
@@ -1030,6 +1034,66 @@ footer a:hover{
     }
 }
 
+/* --- VINRAI FORM STYLE --- */
+.form {
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.form__field {
+    width: 100%;
+}
+
+.field__input {
+    width: 90%;
+    padding: 1.2rem 1.5rem;
+    background: rgba(30, 26, 44, 0.85);
+    border: 1.5px solid rgba(127, 109, 135, 0.4);
+    border-radius: 1.2rem;
+    font-size: 1.2rem;
+    color: #e2d6f7;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 16px 0 rgba(127, 66, 167, 0.07);
+}
+
+.field__input::placeholder {
+    color: #a89bb7;
+    opacity: 1;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+}
+
+.field__input:focus {
+    border: 1.5px solid #7f42a7;
+    box-shadow: 0 0 0 2px #7f42a733;
+    background: rgba(30, 26, 44, 0.97);
+}
+
+.form .button-box {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 1.2rem;
+}
+
+.form button {
+    border-radius: 1.2rem;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-weight: bold;
+    background: transparent;
+    color: #e2d6f7;
+    cursor: pointer;
+    border: none;
+    transition: color 0.2s;
+}
+
 /* TABLET RESPONSIVE */
 @media screen and (max-width: 1200px){
     header{
@@ -1116,7 +1180,7 @@ footer a:hover{
 
     .pricing-section .pricing-img-box img:nth-child(1){
         width: 120%;
-        top: 30%;
+        top: -10%;
     }
 
     .pricing-section .pricing-img-box img:nth-child(2){
@@ -1134,7 +1198,7 @@ footer a:hover{
     }
 
     .pricing-section{
-        height: 2000px;
+        height: fit-content;
     }
 
     footer h1{
@@ -1309,6 +1373,10 @@ footer a:hover{
     .advantage-section .grid-box .grid3 .info{
         margin-left: 0;
         margin-top: -80%;
+    }
+
+    .pricing-section{
+        height: fit-content;
     }
 
     .pricing-section .pricing-container{
@@ -1745,4 +1813,4 @@ footer a:hover{
     }
 
 }
-    
+
