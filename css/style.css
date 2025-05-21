@@ -1,9 +1,30 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto_Condensed-Regular.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body{
     margin: 0;
     padding: 0;
     background-color: rgb(14 12 21);
-    font-family: monospace;
+    font-family: 'Roboto';
     color: lightgray;
+}
+
+h1{
+    font-family: 'Montserrat';
 }
 
 .container{
@@ -15,7 +36,7 @@ body{
 }
 
 header{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat';
     position: fixed;
     top: 0;
     width: 100%;
@@ -54,7 +75,7 @@ header a{
     text-decoration: none;
     color: gray;
     font-weight: 900;
-    font-size: 15px;
+    font-size: 1.25rem;
     transition: 0.3s;
 }
 
@@ -86,9 +107,16 @@ header a:hover{
     border: none;
     background-color: rgb(14 12 21);
     color: lightgray;
+    font-size: 1rem;
+    font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.button-box:hover{
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
 }
 
 .head-right button:hover{
@@ -129,7 +157,7 @@ header a:hover{
 .first-page h1{
     position: absolute;
     top: 10%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Montserrat';
     font-size: 50px;
     max-width: 1000px;
     text-align: center;
@@ -141,7 +169,7 @@ header a:hover{
     top: 22%;
     font-size: 20px;
     max-width: 700px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto';
     text-align: center;
     line-height: 30px;
     color: gray;
@@ -154,16 +182,12 @@ header a:hover{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border-radius: 10px;
-    width: 140px;
-    height:50px;
+    width: 14rem;
+    height: 3.5rem;
     transition: 0.4s;
     cursor: pointer;
     transition: 0.3s;
     font-weight: bold;
-}
-
-.first-page button:hover{
-    opacity: 0.8;
 }
 
 .first-page-image-box{
@@ -417,12 +441,9 @@ header a:hover{
 .app-section .left-container .button-box{
     margin: 0;
     margin-top: 40px;
-    width: 150px;
-    height: 50px;
-}
-
-.app-section .left-container button:hover{
-    opacity: 0.8;
+    width: 14rem;
+    height: 3.5rem;
+    transition: all 0.2s ease-in-out;  
 }
 
 .app-section .right-container{
@@ -566,7 +587,6 @@ header a:hover{
 }
 
 .advantage-section .grid3{
-    background-color: #15131d;
     position: relative;
 }
 
@@ -647,8 +667,8 @@ header a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
-    height: 700px;
+    width: 35rem;
+    height: 40rem;
     border: 0.5px solid rgba(107, 88, 116, 0.5);    
     padding: 30px;
     border-radius: 50px;
@@ -663,8 +683,9 @@ header a:hover{
 }
 
 .pricing-section .price-box h1{
+    z-index: 10;
     font-size: 40px;
-    color: #ffc786;
+    color: #d2b2e7;
     margin-bottom: 20px;
 }
 
@@ -675,16 +696,27 @@ header a:hover{
 }
 
 .pricing-section .price-box button{
+    position: absolute;
+    inset: 3px 3px 3px 3px;
     border: none;
-    background-color: gray;
-    color: black;
-    border-radius: 10px;
-    width: 100%;
-    height: 50px;
+    background-color: rgb(14 12 21);
+    color: lightgray;
+    border-radius: 1.5rem;
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
-    clip-path: polygon(0 0, 96% 0, 100% 35%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
+}
+
+.pricing-section .price-box .button-box{
+    position:relative;
+    width: 100%;
+    height: 4rem;
+    margin-left: 0;
+    border-radius: 1.5rem;
+    background: linear-gradient(to right, #00aaa7, #7f42a7, #6600c5, #1f2b9c,#2a46ff, #0099ff, #00aaa7);
+    background-size: 200%;
+    animation: animationGradient 2.5s linear infinite;
+    transition: all 0.2s ease-in-out;
 }
 
 .pricing-section .price-box p{
@@ -701,19 +733,6 @@ header a:hover{
 .pricing-section .price-box p img {
     height: 40px;
     margin-right: 20px;
-}
-
-.pricing-section .price-box:nth-child(2){
-    margin-top: 20px;
-    height: 950px;
-}
-
-.pricing-section .price-box:nth-child(2) h1{
-    color: #7e00d2;
-}
-
-.pricing-section .price-box:nth-child(3) h1{
-    color: #ff776f;
 }
 
 .pricing-section a{
@@ -744,12 +763,12 @@ header a:hover{
 }   
 
 .faq-section h1{
-    font-size: 40px;
+    font-size: 3rem;
     text-align: center;
     color: white;
 }
 
-.faq-container {
+.faq-container{
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -764,9 +783,22 @@ header a:hover{
     padding: 1rem;
 }
 
+.faq-item summary{
+    font-size: 1.5rem;
+}
+
 .faq-item p{
-    font-size: 1rem;
+    font-size: 1.25rem;
     color:rgb(127, 109, 135)
+}
+
+details[open] summary ~ *{ 
+  animation: sweep .3s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
 }
 
 /* FOOTER  */
@@ -780,7 +812,7 @@ footer{
 }
 
 footer h1{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat';
     margin-left: 5%;
     color: gray;
 }
@@ -1072,7 +1104,6 @@ footer a:hover{
         align-items: center;
         justify-content: center;
         inset: 0 0 0 0;
-        background-color: #15131dbd;
         border-radius: 30px;
     }
 
@@ -1623,8 +1654,8 @@ footer a:hover{
     }
 
     .pricing-section .price-box{
-        width: 50%;
-        height: 70rem;
+        width: 70rem;
+        height: 80rem;
         border: 0.5px solid rgba(107, 88, 116, 0.5);    
         padding: 3rem;
         border-radius: 4rem;
@@ -1633,16 +1664,15 @@ footer a:hover{
 
     .pricing-section .price-box h1{
         font-size: 4rem;
-        color: #ffc786;
         margin-bottom: 2rem;
     }
 
+    .pricing-section .price-box .button-box{
+        height: 8rem;
+    }
+
     .pricing-section .price-box button{
-        border-radius: 10px;
-        width: 100%;
-        height: 6rem;
         font-size: 2.5rem;
-        clip-path: polygon(0 0, 96% 0, 100% 35%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
     }
 
     .pricing-section a{
@@ -1669,12 +1699,12 @@ footer a:hover{
     }
 
     
-    .faq-item h2{
-        font-size: 3rem;
+    .faq-item summary{
+        font-size: 3.5rem;
     }
 
     .faq-item p{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     /* FOOTER  */
