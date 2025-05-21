@@ -1172,8 +1172,14 @@ footer a:hover{
     }
 
     .first-page h1{
+        width: 85%;
         font-size: 2rem;
-        top: 12%;
+        top: 10%;
+    }
+
+    
+    .first-page .button-box{
+        top: 33%
     }
 
     .first-page h2{
