@@ -1176,10 +1176,9 @@ footer a:hover{
         font-size: 2rem;
         top: 10%;
     }
-
     
     .first-page .button-box{
-        top: 33%
+        top: 45%
     }
 
     .first-page h2{
@@ -1190,6 +1189,7 @@ footer a:hover{
     }
     
     .first-page-image-box{
+        margin-top: 30rem;
         height: 300px;
     }
     
@@ -1198,7 +1198,7 @@ footer a:hover{
     }
     
     .first-page{
-        height: 1400px;
+        height: 60rem;
     }
 
     .fadeInLeft{
@@ -1244,7 +1244,7 @@ footer a:hover{
     
     .app-section .left-container h1{
         font-size: 40px;
-        margin-top: 100px;
+        margin-top: 4rem;
     }
 
     .advantage-section h1{
