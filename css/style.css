@@ -528,10 +528,13 @@ header a:hover{
 
 
 .advantage-section .grid-box .grid1 .grid1-robot-img{
-    height: 133%;
+    height: 80%;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto auto auto 5%;
     border-radius: 30px;
 }
 
@@ -671,7 +674,7 @@ header a:hover{
     align-items: center;
     justify-content: space-between;
     width: 35rem;
-    height: 40rem;
+    height: fit-content;
     border: 0.5px solid rgba(107, 88, 116, 0.5);    
     padding: 30px;
     border-radius: 50px;
@@ -1663,24 +1666,15 @@ footer a:hover{
         border-radius: 3rem;
     }
 
-    .advantage-section .grid-box .grid1{
-        grid-column: span 2;
-    }
-
-
     .advantage-section .grid-box .grid1 .grid1-robot-img{
         border-radius: 3rem;
     }
 
     .advantage-section .grid-box .grid1 .info{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: 0;
-        right: 0;
-        margin: auto;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        width: 40%;
     }
 
     .advantage-section .grid-box .grid-card .info h2{
@@ -1691,13 +1685,23 @@ footer a:hover{
     .advantage-section .grid-box .grid-card .info h4{
         font-size: 2.5rem;
         color: rgb(127, 109, 135);
-        max-width: 70%;
         margin-bottom: 5rem;
+        max-width: fit-content;
+    }
+
+    .advantage-section .grid-box .grid1 .grid1-robot-img{
+        width: 45%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto auto auto 2%;
+        border-radius: 30px;
     }
 
     .advantage-section .grid-box .grid1 .info h4{
         font-size: 3rem;
-        max-width: 50%;
     }
 
     .advantage-section .grid-box .grid-card .info p{
@@ -1745,7 +1749,6 @@ footer a:hover{
 
     .pricing-section .price-box{
         width: 70rem;
-        height: 75rem;
         border: 0.5px solid rgba(107, 88, 116, 0.5);    
         padding: 3rem;
         border-radius: 4rem;
