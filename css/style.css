@@ -524,17 +524,31 @@ header a:hover{
 
 .advantage-section .grid-box .grid1{
     grid-column: span 2;
+    position: relative;
+    display: flex;
+    flex-direction: row;
 }
 
+.advantage-section .grid-box .example-ai{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.advantage-section .grid-box .example-ai p{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
 
 .advantage-section .grid-box .grid1 .grid1-robot-img{
-    height: 80%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto auto auto 5%;
+    width: 100%;
+    position: relative;
     border-radius: 30px;
 }
 
@@ -542,6 +556,12 @@ header a:hover{
     position: absolute;
     right: 7%;
     top: 20%;
+}
+
+.advantage-section .grid-box .grid1 .info{
+    position: relative;
+    margin-left: 5%;
+    right: 0;
 }
 
 .advantage-section .grid-box .grid-card .info h2{
@@ -752,6 +772,101 @@ header a:hover{
 .pricing-section a:hover{
     transition: 0.2s ease-in-out;
     opacity: 0.8;
+}
+
+.pricing-section .checkbox-field {
+    margin: 1rem 0;
+    position: relative;
+}
+
+.pricing-section .checkbox__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+    color: rgb(210, 178, 231);
+}
+
+.pricing-section .checkbox__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.pricing-section .checkbox__custom {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid rgba(107, 88, 116, 0.5);
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+    position: relative;
+    flex-shrink: 0;
+    background: rgba(14, 12, 21, 0.7);
+    transition: all 0.2s ease;
+}
+
+.pricing-section .checkbox__input:checked + .checkbox__custom {
+    background-color: #7f42a7;
+    border-color: #d2b2e7;
+}
+
+.pricing-section .checkbox__input:checked + .checkbox__custom:after {
+    content: '';
+    position: absolute;
+    left: 0.3rem;
+    top: 0.1rem;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.pricing-section .checkbox__text a {
+    color: #d2b2e7;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+}
+
+.pricing-section .checkbox__text a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.pricing-section .file-upload__label {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}
+
+.pricing-section .file-upload__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.pricing-section .file-upload__text {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 0;
+    background: rgba(14, 12, 21, 0.7);
+    border: 0.5px dashed rgba(107, 88, 116, 0.5);
+    border-radius: 15px;
+    color: rgb(127, 109, 135);
+    font-size: 1.25rem;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.pricing-section .file-upload__text:hover {
+    border-color: #d2b2e7;
+    color: #d2b2e7;
+    background: rgba(14, 12, 21, 0.9);
 }
 
 /* FAQ-SECTION */
@@ -1171,11 +1286,6 @@ footer a:hover{
         flex-direction: column;
     }
 
-    .advantage-section .grid-box .grid-card .grid1-robot-img{
-        height: 80%;
-        bottom: 15%;
-    }
-
     .advantage-section .grid-box .grid-card .info{
         display: flex;
         flex-direction: column;
@@ -1183,6 +1293,10 @@ footer a:hover{
         justify-content: center;
         inset: 0 0 0 0;
         border-radius: 30px;
+    }
+
+    .advantage-section p{
+        text-align: left;
     }
 
     .advantage-section .grid-box .grid3 .info{
@@ -1213,6 +1327,10 @@ footer a:hover{
     .pricing-section .price-box{
         width: 80%;
         margin-left: 6%;
+    }
+
+    .pricing-section .price-box .button-box{
+        width: 100%;
     }
 
     .pricing-section{
@@ -1351,12 +1469,22 @@ footer a:hover{
     }
 
     .advantage-section .grid-box .grid-card .info{
-        align-items: baseline;
         border-radius: 0;
+    }
+
+    .advantage-section .grid-box .grid1 .info{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .advantage-section .grid-box .grid1 .info{
+        position: absolute;
     }
 
     .advantage-section .grid-box .grid-card .info p{
         width: 100%;
+        text-align: left;
+        text-wrap: wrap;
     }
     
     .advantage-section .grid-box .grid-card .info h2{
@@ -1373,6 +1501,12 @@ footer a:hover{
     
     .grid1-robot-img, .grid3-robot-img{
         display: none;
+    }
+
+    .example-ai, .example-ai p{
+        position: absolute;
+        display: none;
+        visibility: hidden;
     }
 
     .advantage-section .grid-box .grid2 h1{
@@ -1401,6 +1535,8 @@ footer a:hover{
         margin: 0;
         padding: 0;
         width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .pricing-section .pricing-img-box img:nth-child(2){
@@ -1414,7 +1550,7 @@ footer a:hover{
     
     .pricing-section .price-box{
         margin: 0;
-        width: fit-content;
+        width: 90%;
         background-color: rgba(107, 88, 116, 0.023);
     }
 
@@ -1662,7 +1798,8 @@ footer a:hover{
         position: relative;
         border: 0.5px solid rgba(107, 88, 116, 0.5);
         width: 100%;
-        height: 75rem;
+        height: 80rem;
+        overflow: hidden;
         border-radius: 3rem;
     }
 
@@ -1671,9 +1808,6 @@ footer a:hover{
     }
 
     .advantage-section .grid-box .grid1 .info{
-        position: absolute;
-        right: 5%;
-        top: 5%;
         width: 40%;
     }
 
@@ -1690,14 +1824,19 @@ footer a:hover{
     }
 
     .advantage-section .grid-box .grid1 .grid1-robot-img{
-        width: 45%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto auto auto 2%;
-        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .advantage-section .grid-box .example-ai{
+        padding: 3rem;
+        padding-top: 5rem;
+        width: 60%;
+        margin-left: 3rem;
+    }
+
+    .advantage-section .grid-box .example-ai p{
+        font-size: 2rem;
     }
 
     .advantage-section .grid-box .grid1 .info h4{
@@ -1774,6 +1913,52 @@ footer a:hover{
         font-size: 3rem;
         margin-top: 5rem;
         cursor: pointer;
+    }
+
+    .pricing-section .checkbox__label {
+        font-size: 2.25rem;
+    }
+
+    .pricing-section .checkbox__custom {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .pricing-section .checkbox__input:checked + .checkbox__custom {
+        background-color: #7f42a7;
+        border-color: #d2b2e7;
+    }
+
+    .pricing-section .checkbox__input:checked + .checkbox__custom:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 5px;
+        margin: auto;
+        width: 0.75rem;
+        height: 1.25rem;
+    }
+
+    .pricing-section .checkbox__text a {
+        font-size: 2.25rem;
+    }
+
+    .pricing-section .file-upload__label {
+        display: block;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .pricing-section .file-upload__text {
+        width: 100%;
+        padding: 3rem 0;
+        border-radius: 1rem;
+        font-size: 2.25rem;
     }
 
     .faq-section h1{
