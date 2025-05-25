@@ -42,5 +42,24 @@ document.addEventListener('DOMContentLoaded', function(){
                 sideBar.classList.remove('open-sidebar');
             }
         });
-    })
+    }) 
+    
+    const questions = document.querySelectorAll(".question");
+
+    questions.forEach((question) => {
+        question.addEventListener("click", () => {
+        const answer = question.nextElementSibling;
+
+        document.querySelectorAll(".answer").forEach((el) => {
+            if (el !== answer) el.classList.remove("open");
+        });
+        document.querySelectorAll(".question").forEach((q) => {
+            if (q !== question) q.classList.remove("active");
+        });
+
+        answer.classList.toggle("open");
+        question.classList.toggle("active");
+        });
+    });
 });
+
