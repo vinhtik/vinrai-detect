@@ -913,12 +913,20 @@ header a:hover{
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    border-radius: 1rem;
+    border: rgba(107, 88, 116, 0.5) solid 0.8px;
+    position: relative;
+    width: 90%;
 }
 
 .faq-list li {
     width: 100%;
-    border: rgba(107, 88, 116, 0.5) solid 0.8px;
-    padding: 1rem;
+    border-bottom: rgba(107, 88, 116, 0.5) solid 0.8px;
+    padding: 1rem 0;
+}
+
+.faq-list li:last-child {
+    border-bottom: none;
 }
 
 .question {
@@ -932,13 +940,13 @@ header a:hover{
     font-family: inherit;
     color: inherit;
     padding: 0;
-    padding-left: 1.5rem;
+    padding-left: 2.5rem;
 }
 
 .question::after {
     content: '>';
     position: absolute;
-    left: 0;
+    left: 1rem;
     top: 50%;
     transform: translateY(-50%) rotate(0deg);
     transition: transform 0.3s ease;
@@ -2013,12 +2021,12 @@ footer a:hover{
     }
 
     .faq-list li{
-        padding: 2rem;
+        padding: 2rem 0;
     }
     
     .faq-list .question{
         font-size: 3rem;
-        padding-left: 2.5rem;
+        padding-left:5rem;
     }
 
     .faq-list p{
@@ -2028,6 +2036,7 @@ footer a:hover{
 
     .question::after {
         font-size: 3rem;
+        left: 2rem;
     }
 
     /* FOOTER  */
