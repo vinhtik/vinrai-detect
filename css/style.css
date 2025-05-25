@@ -1522,6 +1522,7 @@ footer a:hover{
         width: 100%;
         text-align: left;
         text-wrap: wrap;
+        border-top: none;
     }
     
     .advantage-section .grid-box .grid-card .info h2{
@@ -1535,6 +1536,10 @@ footer a:hover{
     .advantage-section .grid-box .grid-card .info{
         padding: 0;
     }
+
+     .advantage-section .grid-box .grid1 .info{
+        order: 1;
+    }
     
     .grid1-robot-img, .grid3-robot-img{
        width: 100%;
@@ -1543,6 +1548,8 @@ footer a:hover{
    .advantage-section .grid-box .example-ai {
         width: 80%;
         margin-left: 0;
+        order: 2;
+        padding: 3rem 0;
     }
 
     .advantage-section .grid-box .grid2 h1{
