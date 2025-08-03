@@ -202,7 +202,6 @@ header a:hover{
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    background: linear-gradient(to right, #00aaa7, #7f42a7, #6600c5, #1f2b9c,#2a46ff, #0099ff, #00aaa7);
     background-size: 200%;
     animation: animationGradient 2.5s linear infinite;
 }
